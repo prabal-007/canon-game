@@ -57,3 +57,12 @@ def move():
     for target in targets:
         if not inside(target):
             return
+    ontimer(mov, 50)
+
+setup(420, 420,370, 0)
+hideturtle()
+up()
+tracer(False)
+onscreenclick(tap)
+move()
+done()
